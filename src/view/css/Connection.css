@@ -1,0 +1,29 @@
+#anchorPaneLogin {
+    
+   -fx-background-color: gray;
+    
+};
+
+
+#tfLogin {
+    
+
+-fx-focus-color: transparent;
+-fx-faint-focus-color: transparent;
+
+
+    -fx-text-box-border: transparent;
+    
+-fx-border-radius: 30 30 0 0;
+  -fx-background-radius: 30 30 0 0;
+
+  /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+
+
+
+};
+
+#pswField {
+    -fx-focus-color: transparent; 
+    -fx-text-box-border: transparent;
+};
