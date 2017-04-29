@@ -17,7 +17,7 @@
    <top>
       <AnchorPane prefHeight="70.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <MenuBar fx:id="menuBar" prefHeight="29.0" prefWidth="650.0">
+            <MenuBar prefHeight="29.0" prefWidth="650.0">
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
@@ -36,7 +36,7 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <Label fx:id="lblTranslatant" layoutY="35.0" prefHeight="25.0" prefWidth="650.0" text="Livre &quot;Les Miserables&quot; faible stock: 10  |  Editeur Nathan en cours de demenagement " />
+            <Label layoutY="35.0" prefHeight="25.0" prefWidth="650.0" text="Livre &quot;Les Miserables&quot; faible stock: 10  |  Editeur Nathan en cours de demenagement " />
          </children>
       </AnchorPane>
    </top>
@@ -53,7 +53,7 @@
                <VBox.margin>
                   <Insets bottom="10.0" top="20.0" />
                </VBox.margin></Separator>
-            <Button fx:id="btnAuteur" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Auteur">
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Auteur">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -63,7 +63,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnAvis" mnemonicParsing="false" prefWidth="110.0" text="Avis">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Avis">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -73,7 +73,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnClient" mnemonicParsing="false" prefWidth="110.0" text="Client">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Client">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -83,7 +83,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnCommande" mnemonicParsing="false" prefWidth="110.0" text="Commande">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Commande">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -93,7 +93,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnEditeur" mnemonicParsing="false" prefWidth="110.0" text="Editeur">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Editeur">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -103,7 +103,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnEmploye" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Employe">
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Employe">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -113,7 +113,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnFraisDePort" mnemonicParsing="false" prefWidth="110.0" text="Frais de port">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Frais de port">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -123,7 +123,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnTransporteur" mnemonicParsing="false" prefWidth="110.0" text="Transporteur">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Transporteur">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -133,7 +133,7 @@
                   <Insets bottom="30.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnQuit" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Quit">
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Quit">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
@@ -148,7 +148,7 @@
                <VBox.margin>
                   <Insets bottom="10.0" top="20.0" />
                </VBox.margin></Separator>
-            <Button fx:id="btnLivre" mnemonicParsing="false" prefWidth="110.0" text="Livre">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Livre">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -158,7 +158,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnMotCle" mnemonicParsing="false" prefWidth="110.0" text="Mot cle">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Mot cle">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -168,7 +168,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnOuvrage" mnemonicParsing="false" prefWidth="110.0" text="Ouvrage">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Ouvrage">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -178,7 +178,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnPromotion" mnemonicParsing="false" prefWidth="110.0" text="Promotion">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Promotion">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -188,7 +188,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnRecherche" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Recherche">
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Recherche">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -198,7 +198,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnStatut" mnemonicParsing="false" prefWidth="110.0" text="Statut">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Statut">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -208,7 +208,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnTheme" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Theme">
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Theme">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -218,7 +218,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnTva" mnemonicParsing="false" prefWidth="110.0" text="Tva">
+            <Button mnemonicParsing="false" prefWidth="110.0" text="Tva">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -228,7 +228,7 @@
                   <Insets bottom="30.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnInfosLibrairie" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Infos librairie">
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Infos librairie">
                <VBox.margin>
                   <Insets />
                </VBox.margin>

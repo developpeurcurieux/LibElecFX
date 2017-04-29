@@ -1,4 +1,4 @@
-package model_TablesDB;
+package model_tablesDB;
 
 import java.time.LocalDate;
 

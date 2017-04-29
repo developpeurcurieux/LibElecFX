@@ -5,8 +5,8 @@
 */
 package utilDB;
 
-import model_TablesDB.Client;
-import model_TablesDB.Adresse;
+import model_tablesDB.Client;
+import model_tablesDB.Adresse;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

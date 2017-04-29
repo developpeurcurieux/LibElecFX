@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
-import model_TablesDB.Adresse;
-import model_TablesDB.Client;
+import model_tablesDB.Adresse;
+import model_tablesDB.Client;
 
 public class AdresseDB implements DAOInterface{
     private Adresse adresse;
