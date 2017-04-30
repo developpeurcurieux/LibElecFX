@@ -5,6 +5,7 @@
  */
 package sample;
 
+import controller.ConnectionController;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -28,27 +29,14 @@ public class Main extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        try {
-       Image iconApp = new Image(getClass().getResourceAsStream("/res/libIcon_32.png"));
-            
-        Parent root = FXMLLoader.load(getClass().getResource("/view/fxml/Connection.fxml"));
-        Scene scene = new Scene(root);
-                          
-        primaryStage.getIcons().add(iconApp);
-        primaryStage.setTitle("LibElec");
-        primaryStage.setScene(scene);
-        primaryStage.show(); 
-        
-        }catch(IOException ex) {
-            System.out.println("file fxml not loaded / " + ex.getMessage());
-        }
-    }
+     Launcher launcher = new Launcher(primaryStage);
+     
 
-    /**
-     * @param args the command line arguments
-     */
+
+    }
     public static void main(String[] args) {
-        DBUtil.toConnect();
+        //TODO ne pas oublier DBUtil.toConnec()
+        //DBUtil.toConnect();
         launch(args);
     }
     
