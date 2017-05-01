@@ -1,8 +1,8 @@
-package model_tablesDB;
+package model_tableDB;
 
 
 public class LigneCommande {
-    private long LIG_ID;
+    private final long LIG_ID;
     private long comId;
     private String isbn;
     private long aviId;

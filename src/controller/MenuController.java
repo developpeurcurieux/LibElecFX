@@ -8,6 +8,7 @@ package controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.fxml.*;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
@@ -43,13 +44,21 @@ public class MenuController implements Initializable {
     public void updateToMenuScene() {
         
         MenuScene menuScene = new MenuScene(rootMenu);
-           primaryStage.setScene(null);
+        primaryStage.setScene(null);
         primaryStage.setScene(menuScene);
         primaryStage.show();
     }
     
+    // FXML components
+    //TODO actions btn menu
     @FXML
     public void initialize(URL location, ResourceBundle resources) {
+        
+    }
+    
+    public void quitApp() {
+        Platform.exit();
+        System.exit(0);
         
     }
     

@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import utilDB.DBUtil;
+import utilDB.sqlserver.dao.DBUtilSQLS;
 
 /**
  *
@@ -35,7 +35,7 @@ public class Main extends Application {
 
     }
     public static void main(String[] args) {
-        //TODO ne pas oublier DBUtil.toConnec()
+        //TODO ne pas oublier DBUtilSQLS.toConnec()
         //DBUtil.toConnect();
         launch(args);
     }

@@ -1,4 +1,4 @@
-package model_tablesDB;
+package model_tableDB;
 
 
 public class Destinataire {

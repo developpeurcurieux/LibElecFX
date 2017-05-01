@@ -1,4 +1,4 @@
-package utilDB;
+package utilDB.sqlserver.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Types;
 
-public class DBUtil {
+public class DBUtilSQLS {
     private static String url;
     private String query;
     private PreparedStatement pstmt;
@@ -17,7 +17,7 @@ public class DBUtil {
     static Connection connexion;
     
    
-    public DBUtil() {
+    public DBUtilSQLS() {
         
     }
     

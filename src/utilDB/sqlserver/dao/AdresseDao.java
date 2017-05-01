@@ -1,4 +1,4 @@
-package utilDB;
+package utilDB.sqlserver.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,10 +6,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
-import model_tablesDB.Adresse;
-import model_tablesDB.Client;
+import model_tableDB.Adresse;
+import model_tableDB.Client;
+import utilDB.DAOInterface;
 
-public class AdresseDB implements DAOInterface{
+public class AdresseDao implements DAOInterface{
     private Adresse adresse;
     private String query = "";
     private PreparedStatement pstmt;
@@ -17,7 +18,7 @@ public class AdresseDB implements DAOInterface{
     private Statement stmt;
     
     
-    public AdresseDB(Adresse adresse) {
+    public AdresseDao(Adresse adresse) {
         this.adresse = adresse;
     }
     
@@ -62,7 +63,7 @@ public class AdresseDB implements DAOInterface{
         }
     }
     
-    // TODO Il ne faut oublier le update AdresseDB (attente pour voir sa mise en place)
+    // TODO Il ne faut oublier le update AdresseDao (attente pour voir sa mise en place)
     @Override
     public void update(long id, String attribut, String nouveauAttribut) {
         query = "";
@@ -92,7 +93,7 @@ public class AdresseDB implements DAOInterface{
                 
                 System.out.println("code postal: " + nouveauAttribut);
                 
-                pstmt = DBUtil.connexion.prepareStatement(query);
+                pstmt = DBUtilSQLS.connexion.prepareStatement(query);
                 pstmt.executeUpdate();
                 
             }catch(NumberFormatException ex) {
@@ -132,7 +133,7 @@ public class AdresseDB implements DAOInterface{
                 
                 System.out.println("code postal: " + nouveauAttribut);
                 
-                pstmt = DBUtil.connexion.prepareStatement(query);
+                pstmt = DBUtilSQLS.connexion.prepareStatement(query);
                 pstmt.executeUpdate();
                 
             }catch(NumberFormatException ex) {
@@ -153,7 +154,7 @@ public class AdresseDB implements DAOInterface{
         
         try {
             query = "SELECT * FROM Adresse;";
-            stmt = DBUtil.connexion.createStatement(
+            stmt = DBUtilSQLS.connexion.createStatement(
                     ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY
             );

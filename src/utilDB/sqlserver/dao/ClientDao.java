@@ -3,10 +3,10 @@
 * To change this template file, choose Tools | Templates
 * and open the template in the editor.
 */
-package utilDB;
+package utilDB.sqlserver.dao;
 
-import model_tablesDB.Client;
-import model_tablesDB.Adresse;
+import model_tableDB.Client;
+import model_tableDB.Adresse;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,9 +15,10 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Vector;
+import utilDB.DAOInterface;
 
 
-public class ClientDB implements DAOInterface{
+public class ClientDao implements DAOInterface{
     private Adresse adresse;
     private Client client;
     private String query = "";
@@ -25,12 +26,12 @@ public class ClientDB implements DAOInterface{
     private Statement stmt;
     //
     
-    public ClientDB() {
+    public ClientDao() {
         //TODO il faut la mettre au debut vers le programme
         
     }
     
-    public ClientDB(Client client) {
+    public ClientDao(Client client) {
         this.client = client;
     }
     
@@ -43,7 +44,7 @@ public class ClientDB implements DAOInterface{
                     + "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
             
             
-            pstmt = DBUtil.connexion.prepareStatement(query);
+            pstmt = DBUtilSQLS.connexion.prepareStatement(query);
 
             pstmt.executeUpdate();
             
@@ -61,7 +62,7 @@ public class ClientDB implements DAOInterface{
                     + "WHERE cliId = " + id + ";";
             
            
-            pstmt = DBUtil.connexion.prepareStatement(query);
+            pstmt = DBUtilSQLS.connexion.prepareStatement(query);
       pstmt.executeUpdate();
             
         } catch(SQLException ex) {
@@ -75,7 +76,7 @@ public class ClientDB implements DAOInterface{
         
         try {
             query = "SELECT * FROM Client;";
-            stmt = DBUtil.connexion.createStatement(
+            stmt = DBUtilSQLS.connexion.createStatement(
                     ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY
             );
@@ -129,7 +130,7 @@ public class ClientDB implements DAOInterface{
                     + "WHERE cliNom = '"
                     + nom + "';";
             
-            stmt = DBUtil.connexion.createStatement(
+            stmt = DBUtilSQLS.connexion.createStatement(
                     ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY
             );
@@ -182,7 +183,7 @@ public class ClientDB implements DAOInterface{
                     + "WHERE cliId = '"
                     + id + "';";
              System.out.println("query: " + query);
-            stmt = DBUtil.connexion.createStatement(
+            stmt = DBUtilSQLS.connexion.createStatement(
                     ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY
             );
