@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.application.Platform;
 import javafx.fxml.*;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import view.scene.MenuScene;
@@ -20,9 +21,9 @@ public class MenuController implements Initializable {
     private Parent rootMenu;
     private Stage primaryStage;
     private FXMLLoader fxmlMenu;
-    private Launcher launcher;
+   
     
-    public MenuController(Stage primaryStage, Launcher launcher) {
+    public MenuController(Stage primaryStage) {
         this.primaryStage = primaryStage;
         
         initComponents();
@@ -46,13 +47,24 @@ public class MenuController implements Initializable {
         MenuScene menuScene = new MenuScene(rootMenu);
         primaryStage.setScene(null);
         primaryStage.setScene(menuScene);
+        primaryStage.centerOnScreen();
         primaryStage.show();
     }
     
     // FXML components
     //TODO actions btn menu
     @FXML
+    Button btnClient;
+    
+    @FXML
+    Button btnQuit;
+    
+    
+    @Override
     public void initialize(URL location, ResourceBundle resources) {
+        btnQuit.setOnAction(e -> quitApp());
+        btnClient.setOnAction(e -> updateToClient());
+        
         
     }
     
@@ -61,5 +73,10 @@ public class MenuController implements Initializable {
         System.exit(0);
         
     }
+    
+    public void updateToClient() {
+        ClientController clientController = new ClientController(primaryStage);
+    }
+    
     
 }

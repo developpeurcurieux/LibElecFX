@@ -54,6 +54,7 @@ public class ConnectionController implements Initializable {
         primaryStage.setTitle("LibElec");
         primaryStage.getIcons().add(iconApp);
         primaryStage.setScene(connectionScene);
+        primaryStage.centerOnScreen();
         primaryStage.show();
         
     }
@@ -65,7 +66,7 @@ public class ConnectionController implements Initializable {
 //        fxmlConnect.setResources(null);
 //        fxmlConnect.getNamespace().clear();
         primaryStage.close();
-        launcher.loadMenuScene();
+          MenuController menuController = new MenuController(primaryStage);
         
     }
     

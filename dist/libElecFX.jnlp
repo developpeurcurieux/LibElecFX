@@ -9,7 +9,7 @@
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
     <jar href="lib/sqljdbc42.jar" size="891490" download="eager" />
-    <jar href="libElecFX.jar" size="165839" download="eager" />
+    <jar href="libElecFX.jar" size="172575" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="libElecFX" >
     <param name="requiredFXVersion" value="8.0+"/>

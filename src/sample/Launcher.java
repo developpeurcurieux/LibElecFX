@@ -13,17 +13,12 @@ public class Launcher {
     private Stage primaryStage;
     private ConnectionController connectionController;
     private MenuController menuController;
-    
+    private ClientController clientController;
+            
     public Launcher(Stage primaryStage) {
         this.primaryStage = primaryStage;
         connectionController = new ConnectionController(primaryStage, this);
     }
-    
-    public void loadMenuScene() {
-        menuController = new MenuController(primaryStage, this);
-    }
-    
-    
 
     
 }

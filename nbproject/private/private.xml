@@ -3,11 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/kakashi/LibElecFX/src/model_tableDB/Statut.java</file>
-            <file>file:/home/kakashi/LibElecFX/src/model_tableDB/Theme.java</file>
-            <file>file:/home/kakashi/LibElecFX/src/model_tableDB/Recherche.java</file>
-            <file>file:/home/kakashi/LibElecFX/src/model_tableDB/Livre.java</file>
-            <file>file:/home/kakashi/LibElecFX/src/model_tableDB/SousTheme.java</file>
+            <file>file:/home/testo/LibElecFX/src/controller/ClientController.java</file>
+            <file>file:/home/testo/LibElecFX/src/view/fxml/Client.fxml</file>
         </group>
     </open-files>
 </project-private>
